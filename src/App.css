@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1rem;
+}
+
+button {
+    border: none;
+    padding: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+    font-family: "Jost";
+    font-size: 1rem;
+}
+
+img[alt="phone"] {
+    padding: 1px;
+}
+
+main {
+    padding-top: 13vh;
+}

@@ -1,0 +1,37 @@
+.auth_buttons {
+    display: flex;
+    gap: 1.5vh;
+    width: 250px;
+}
+
+.auth_buttons > button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    height: 4vh;
+    padding: 1vh 15px;
+    cursor: pointer;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.auth_buttons > .button_auth {
+    background-color: rgb(2, 197, 61);
+    transition: 0.2s;
+}
+
+.auth_buttons > .button_auth:hover {
+    background-color: rgb(14, 231, 87);
+    transition: 0.2s;
+}
+
+.auth_buttons > .button_reg, .auth_buttons > .button_home {
+    background-color: rgb(24, 24, 24);
+    transition: 0.2s;
+}
+
+.auth_buttons > .button_reg:hover, .auth_buttons > .button_home:hover {
+    background-color: rgb(73, 73, 73);
+    transition: 0.2s;
+}
