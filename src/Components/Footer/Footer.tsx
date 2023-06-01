@@ -4,12 +4,9 @@ import "./Footer.css";
 
 const Footer: React.FC = () => {
     const page = useAppSelector(state => state.page.page);
-    let footerBackground = (page === PagesEnum.AUTH || page === PagesEnum.REG) ?
-        "rgb(5, 2, 12)" :
-        "linear-gradient(to top, rgb(15, 15, 15), rgb(25, 25, 25))";
 
     return (
-        <footer style={{ background: footerBackground }}>
+        <footer>
             <div className="footer_contacts">
                 <h3>Контакты</h3>
                 <div>

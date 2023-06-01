@@ -4,6 +4,7 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 4vh;
+    background-color: rgb(5, 2, 12);
 }
 
 footer > div {

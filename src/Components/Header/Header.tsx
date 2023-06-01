@@ -8,7 +8,7 @@ type HeaderProps = { }
 const Header: React.FC<HeaderProps> = () => {
     const dispatch = useAppDispatch();
 
-    function SetPage(page: PagesEnum ) {
+    function setPage(page: PagesEnum ) {
         dispatch({ type: PageActionTypes.SET_PAGE, payload: page });
     }
 
@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = () => {
                 <h3>Мы всегда на связи!</h3>
             </div>
             <div className="main_header_info">
-                <a onClick={() => SetPage(PagesEnum.HOME)}>
+                <a onClick={() => setPage(PagesEnum.HOME)}>
                     <img className="logo" src="/assets/logo.png" alt="logo"/>                    
                 </a>
                 <nav>

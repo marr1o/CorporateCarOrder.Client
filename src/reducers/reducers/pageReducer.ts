@@ -10,7 +10,7 @@ type PageStateType = {
 }
 
 const defaultState: PageStateType = {
-    page: PagesEnum.AUTH
+    page: PagesEnum.HOME
 }
 
 const pageReducer = (state: PageStateType = defaultState, action: PageActionType) => {
