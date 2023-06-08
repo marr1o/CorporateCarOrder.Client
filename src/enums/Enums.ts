@@ -1,22 +1,35 @@
 export enum PagesEnum {
     HOME = "HOME",
     AUTH = "AUTH",
-    REG = "REG"
+    REG = "REG",
+    ACCOUNT = "ACCOUNT",
+    ANALYTIC = "ANALYTIC",
+    DRIVER = "DRIVER",
+    FAQ = "FAQ",
+    ORDER = "ORDER"
+}
+
+export enum AuthTypes {
+    NONE = "NONE",
+    USER = "USER",
+    DRIVER = "DRIVER",
+    ANALYTIC = "ANALYTIC"
 }
 
 export enum PageActionTypes {
     SET_PAGE = "SET_PAGE"
 }
 
-export enum IsAuthorizedActionTypes {
-    SET_IS_AUTHORIZED = "SET_IS_AUTHORIZED"
+export enum AuthActionTypes {
+    SET_AUTH = "SET_AUTH"
 }
 
-export enum MILEAGE {
-    
+export enum OrderTypes {
+    DURATION = "DURATION",
+    DESTINATION = "DESTINATION"
 }
 
-export enum CATEGORIES {
+export enum Categories {
     A = "A",
     B = "B",
     C = "C",

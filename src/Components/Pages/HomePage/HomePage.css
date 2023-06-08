@@ -6,7 +6,7 @@ section {
 
 #section_welcome {
     height: 80vh;
-    background-image: url(/public/assets/main_background.png);
+    background-image: url(/public/assets/main_background.jpg);
 }
 
 .blackout {
@@ -25,7 +25,6 @@ h1 {
     font-size: 3rem;
     margin-bottom: 2vh;
     color: white;
-    
 }
 
 #section_welcome h2 {
@@ -70,21 +69,11 @@ h1 {
     width: 47%;
 }
 
-h2:not(#section_welcome h2) {
+#home_page h2:not(#section_welcome h2) {
     font-family: 'Commissioner', sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 1vh;
-}
-
-hr {
-    width: 20%;
-    border: 1px solid rgb(255, 22, 22);
-}
-
-p {
-    font-size: 1.25rem;
-    color: rgb(71, 71, 71);
 }
 
 .about_picture {
@@ -147,7 +136,7 @@ p {
     height: auto;
     padding: 5vh 3vw;
     border-radius: 2vh;
-    background: linear-gradient(rgb(9, 5, 19), rgb(5, 2, 12));
+    background: linear-gradient(rgb(15, 12, 24), rgb(13, 10, 19));
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.24);
     display: flex;
     flex-direction: column;
@@ -160,7 +149,7 @@ p {
 }
 
 #section_contact form input:not(input[type="submit"]), textarea {
-    background-color: rgb(47, 46, 70);
+    background-color: rgb(51, 51, 63);
     color: white;
     box-sizing: border-box;
     padding: 1vh 1.5vh;
@@ -171,29 +160,10 @@ p {
     color: rgb(209, 209, 209);
 }
 
-textarea {
-    flex-grow: 1;
-    min-height: 12vh;
-    text-align: top;
-    resize: vertical;
-}
-
-.green_button {
-    font-size: 1.25rem;
-    font-weight: 600;
+.contact_content .basic_button {
     width: 50%;
     height: 6vh;
-    margin-top: 2vh;
-    background: rgb(255, 196, 0);
-    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    border-radius: 2vh;
-    transition: 0.3s;
-}
-
-.green_button:hover {
-    background-color: rgb(255, 208, 52);
-    transition: 0.3s;
+    margin-top: 2vh;    
 }
 
 #section_contact h2 {

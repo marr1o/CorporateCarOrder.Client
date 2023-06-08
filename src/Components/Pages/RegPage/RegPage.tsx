@@ -1,9 +1,7 @@
-import RegForm from "../../Forms/Forms/RegForm/RegForm";
+import RegForm from "./RegForm/RegForm";
 import "./RegPage.css";
 
-type RegPageProps = { }
-
-const RegPage: React.FC<RegPageProps> = () => {
+const RegPage: React.FC = () => {
     return (
         <main id="reg_page">
             <section id="reg_form_section">

@@ -47,3 +47,41 @@ img[alt="phone"] {
 main {
     padding-top: 13vh;
 }
+
+textarea {
+    flex-grow: 1;
+    min-height: 12vh;
+    text-align: top;
+    resize: vertical;
+}
+
+hr {
+    width: 20%;
+    border: 1px solid rgb(255, 22, 22);
+}
+
+p, label {
+    font-size: 1.25rem;
+    color: rgb(71, 71, 71);
+}
+
+.basic_button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    background: rgb(255, 196, 0);
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 2vh;
+    transition: 0.15s;
+    font-family: "Jost";
+}
+
+.basic_button:hover {
+    background-color: rgb(255, 215, 37);
+    transition: 0.15s;
+}
+
+.basic_button:disabled {
+    background: rgba(114, 114, 114, 0.7);
+    cursor: not-allowed;
+}

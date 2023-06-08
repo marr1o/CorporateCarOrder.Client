@@ -6,6 +6,7 @@ header {
     background-color: white;
     border-bottom: 1px solid rgb(185, 185, 185);
     position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -24,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
 
 .contacts_wrapper {
@@ -31,6 +33,7 @@ header {
     padding: 0 8%;
     height: 25%;
     border-bottom: 1px solid rgb(185, 185, 185);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,6 +67,8 @@ header nav {
     display: flex;
     height: 60%;
     gap: 4vh;
+    width: 60%;
+    justify-self: flex-start;
 }
 
 header nav > a {
@@ -82,4 +87,8 @@ header nav > a:hover {
     font-weight: 700;
     color: rgb(43, 43, 43);
     transition: 0.1s;
+}
+
+.a_to_home {
+    cursor: pointer;
 }

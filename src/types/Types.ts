@@ -1,4 +1,4 @@
-import { CATEGORIES, MILEAGE } from "../enums/Enums"
+import { Categories, OrderTypes } from "../enums/Enums"
 
 export type OrderDto = {
   from: {
@@ -13,7 +13,7 @@ export type OrderDto = {
   },
   duration: number,
   message: string,
-  order_type: MILEAGE
+  order_type: OrderTypes
 }
 
 export type UserRegDto = {
@@ -24,7 +24,7 @@ export type UserRegDto = {
   phone_number: string,
   avg_rate: number,
   status: string,
-  category: CATEGORIES,
+  category: Categories,
   updated_at: string
 }
 

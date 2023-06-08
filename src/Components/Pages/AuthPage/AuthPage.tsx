@@ -1,9 +1,7 @@
-import AuthForm from "../../Forms/Forms/AuthForm/AuthForm";
+import AuthForm from "./AuthForm/AuthForm";
 import "./AuthPage.css";
 
-type AuthPageProps = { }
-
-const AuthPage: React.FC<AuthPageProps> = () => {
+const AuthPage: React.FC = () => {
     return (
         <main id="auth_page">
             <section id="auth_form_section">

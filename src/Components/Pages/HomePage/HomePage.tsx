@@ -1,13 +1,28 @@
+import { useAppDispatch, useAppSelector } from "../../../customHooks";
+import { AuthTypes, PageActionTypes, PagesEnum } from "../../../enums/Enums";
 import "./HomePage.css";
 
 const HomePage: React.FC = () => {
+    const dispatch = useAppDispatch();
+    const authType = useAppSelector(state => state.auth.authType);
+
+    const setPage = (page: PagesEnum) => {
+        dispatch({ type: PageActionTypes.SET_PAGE, payload: page });
+    }
+
+    const orderButtonClick = () => {
+        authType === AuthTypes.USER ?
+        setPage(PagesEnum.ORDER) :
+        setPage(PagesEnum.AUTH);
+    }
+
     return (
         <main id="home_page">
             <section id="section_welcome">
                 <div className="blackout">
                     <h1>Corporate Car Order</h1>
                     <h2>Заказ любых автомобилей с любой целью в любое время и в любое место.</h2>
-                    <button className="start_button">Заказать</button> 
+                    <button className="start_button" onClick={() => orderButtonClick()}>Заказать</button> 
                 </div>
             </section>
             <section id="section_about">
@@ -46,7 +61,7 @@ const HomePage: React.FC = () => {
                         <input type="tel" placeholder="Номер телефона..."/>
                         <input type="text" placeholder="Имя..."/>
                         <textarea placeholder="Вопрос..."/>
-                        <input className="green_button" type="submit" />
+                        <input className="basic_button" type="submit" />
                     </form>
                     <div>
                         <p>Если у вас возникли вопросы, или вам необходима консультация, вы можете связаться с нами, заполнив и отправив форму.</p>
