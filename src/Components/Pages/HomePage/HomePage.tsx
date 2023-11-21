@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
                         <input type="tel" placeholder="Номер телефона..."/>
                         <input type="text" placeholder="Имя..."/>
                         <textarea placeholder="Вопрос..."/>
-                        <input className="basic_button" type="submit" />
+                        <input className="basic_button" type="submit" value="Оставить заявку"/>
                     </form>
                     <div>
                         <p>Если у вас возникли вопросы, или вам необходима консультация, вы можете связаться с нами, заполнив и отправив форму.</p>
