@@ -1,0 +1,114 @@
+
+.wrapper-adresses_inputs {
+    display: flex;
+    gap: 30px;
+}
+
+.wrapper-adresses_inputs > * {
+    flex-grow: 1;
+}
+
+.wrapper-adresses {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.wrapper-adresses_block {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#submit_adresses {
+    box-shadow: none;
+    border-radius: 10px;
+    letter-spacing: 0;
+    width: auto;
+    padding: 0 30px;
+    align-self: flex-start;
+    height: 3rem;
+    font-size: 1.125rem;
+}
+
+#order_form {
+    max-width: 700px;
+    width: 100%;
+    gap: 4vh;
+}
+
+#order_form .points_wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+#submit_button_yellow {
+    background-color: rgb(255, 196, 0);
+    transition: 0.15s;
+}
+
+#submit_button_yellow:hover {
+    background-color: rgb(255, 214, 33);
+    transition: 0.15s;
+}
+
+.points_wrapper h4 {
+    font-size: 1.25rem;
+}
+
+.clue_adresses {
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+.clue_adresses > div {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+
+.clue_adresses > div > .basic_button {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    border-radius: 1vh;
+    padding: 0 20px;
+    box-shadow: none;
+}
+.clue_adresses > div > input {
+    flex-grow: 1;
+    border-radius: 1vh;
+    padding: 0 12px;
+}
+
+.wrapper-intermediate_adresses {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: rgb(255, 248, 228);
+    padding: 2vh 2vw;
+    border-radius: 1vh;
+}
+
+.wrapper-intermediate_adresses h4, .wrapper-intermediate_adresses p {
+    font-size: 1.125rem;
+}
+
+.wrapper-intermediate_adresses .add_button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: url(/public/assets/plus_icon.png);
+    background-position: center;
+    background-size: 16px;
+    transition: 0.2s;
+}
+
+.wrapper-intermediate_adresses .add_button:hover {
+    background-image: url(/public/assets/plus_icon_white.png);
+    background-color: rgb(100, 100, 100);
+    transition: 0.2s;
+}
